@@ -1,6 +1,6 @@
 #include <stdio.h>
 /**
- * main - prints "Programming is like building a multilingual
+ * main - A program that prints a line with puts function
  * puzzle, followed by a newline.
  * Return: 0 (success)
  */
