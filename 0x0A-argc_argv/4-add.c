@@ -4,10 +4,11 @@
 #include <string.h>
 
 /**
- * check_num - check - string there are digit
- * @str: array str
+ * main - Prints the sum of args positve numbers
+ * @argc: argument count
+ * @argv: argument vector
  *
- * Return: Always 0 (Success)
+ * Return: Always zero
  */
 int main(int argc, char *argv[])
 {
