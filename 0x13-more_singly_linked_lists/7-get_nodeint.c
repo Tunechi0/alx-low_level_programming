@@ -1,25 +1,29 @@
 #include <stdlib.h>
 #include "lists.h"
+#include <stdio.h>
 
 /**
-  * pop_listint - ...
+  * get_nodeint_at_index - ...
   * @head: ...
+  * @index: ...
   *
   * Return: ...
   */
-
-int pop_listint(listint_t **head)
+listint_t *get_nodeint_at_index(listint_t *head, unsigned int index)
 {
-	listint_t *new_head;
-	int n = 0;
+	unsigned int count = 0;
 
-	if (*head != NULL)
+	if (head)
 	{
-		new_head = (*head)->next;
-		n = (*head)->n;
-		free(*head);
-		*head = new_head;
+		while (head)
+		{
+			if (count == index)
+				return (head);
+
+			head = head->next;
+			count++;
+		}
 	}
 
-	return (n);
+	return (NULL);
 }
